@@ -1,0 +1,305 @@
+html{
+    scroll-padding-top: 56px;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* Ensure container is properly sized */
+.container {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.navbar-nav .nav-link.active{
+    color:#fff;
+    font-size:20px;
+    font-weight: 400 !important;
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar-nav .nav-link{
+    color:#fff;
+    font-size:20px;
+    font-weight: 400 !important;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.logo{
+    width:110px
+}
+.navbar{
+    background-color: #004141;
+}
+
+.formsearch .form-control{
+    background-color: #006B6C;
+    border:none;
+    border-radius: 0 !important; 
+    
+}
+.formsearch i{
+    background-color:  #00BFCC;
+    padding: 20px;
+   
+}
+
+
+.navbar-nav .nav-item{
+    padding-inline: 10px;
+}
+.navbar-brand{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.navbar-toggler{
+    border:none;
+    
+}
+.navbar-toggler .fa-bars{
+    font-size: 25px;
+   
+    
+} 
+
+.navbar-toggler:focus{
+    box-shadow: none;
+
+}
+.navbar-nav .nav-link.active{
+    position: relative;
+    
+   
+}
+.navbar-nav .nav-link.active::before{
+    content: "";
+width:72%;
+height: 2px;
+background-color:#fff;
+position: absolute;
+left:15%;
+top:70%; 
+opacity: 1;
+}
+.navbar-nav .nav-link{
+    position: relative;
+}
+.navbar-nav .nav-link::before{
+content: "";
+ width:0%;
+height: 2px;
+background-color:#fff;
+position: absolute;
+left:15%;
+top:70%; 
+transition: all 0.5s;
+-webkit-transition:all 0.5s ;
+-moz-transition:all 0.5s ;
+-ms-transition:all 0.5s;
+-o-transition:all 0.5s;
+opacity: 0;
+ 
+}
+
+.navbar-nav .nav-link:focus::before{
+ width:72%;
+ opacity: 1;
+}
+@media screen and (max-width :990px){
+    
+    .navbar-nav .nav-link.active::before{
+        width: 45px;
+        left:50%;
+        background-color:black;
+        transform: translate(-50%);
+        -webkit-transform:translate(-50%) ;
+        -moz-transform:translate(-50%) ;
+        -ms-transform:translate(-50%);
+        -o-transform:translate(-50%);
+        
+    }
+    .navbar-nav{
+        background-color: #fff;
+        padding-block: 15px;
+        text-align: center;
+        
+    }
+    .navbar-nav .nav-link.active{
+        color:black;
+        font-weight: 100;
+        padding-block: 12px;
+        
+        font-size: 13px;
+    }
+    .navbar-nav .nav-link{
+        color:black;
+        font-weight: 100;
+        padding-block: 12px;
+        font-size: 13px;
+    }
+    
+
+}
+
+
+
+/* -----------end navbar--------- */
+
+#home{
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/bg.jpg); */
+    /* background-size: cover;
+    background-position: center center; */
+    overflow: auto;
+    background-color: #006B6C;
+}
+#home .home-info{
+    margin-top: 230px;
+    margin-left:100px
+    
+}
+#home .home-info h1{
+font-size: 50px;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.home-info h1::after{
+    content: "";
+    
+    animation: typing 3s infinite alternate;
+    }
+    @keyframes typing{
+        0%{
+            content: "Wel|";
+        }
+        10%{
+            content: "Welc|";
+        }
+        20%{
+            content: "Welcome|";
+        }
+        30%{
+            content: "Welcome to|";
+        }
+        40%{
+            content: "Welcome to Th|";
+        }
+        50%{
+            content: "Welcome to The |";
+        }
+        60%{
+            content: "Welcome to The HK|";
+        }
+        70%{
+            content: "Welcome to The HK St|";
+        }
+        80%{
+            content: "Welcome to The HK Stu|";
+        }
+        90%{
+            content: "Welcome to The HK Stud|";
+        }
+        100%{
+            content: "Welcome to The HK Studio|";
+        }
+       
+    }
+
+.btn-contact{
+    color:white;
+    background-color: #00BFCC;
+    padding: 15px 30px;
+}
+.btn-services{
+    color:white;
+    padding: 15px 30px;
+    border: 2px white solid;
+}
+/* ----------endhome---------- */
+
+.about-info{
+    margin-top:100px;
+
+}
+.about-info h2 {
+    font-size: 50px;
+    margin-top:50px;
+    font-weight: bold;
+}
+.about-info p{
+    margin-top:20px;
+    font-size:28px ;
+    font-weight:400;
+}
+.btn-service{
+    color:white;
+    font-size: 25px;
+    font-weight:500;
+    background-color: #006B6C;
+    padding: 15px 30px;
+}
+
+/* -----------endabout--------- */
+
+#cousres{
+    background-color:#004141;
+}
+.cousre-info h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.cousre-info p{
+    font-size: 30px;
+    font-weight: 400;
+}
+/* --------endcousres--------- */
+
+.service-info{
+    margin-top:100px;
+    direction: rtl;
+}
+.service-info h2 {
+    font-size: 60px;
+    margin-top:50px;
+    font-weight: bold;
+}
+.service-info p{
+    margin-top:30px;
+    font-size:28px ;
+    font-weight:400;
+}
+
+.btn-service{
+    color:white;
+    font-size: 25px;
+    font-weight:500;
+    background-color: #006B6C;
+    padding: 15px 30px;
+}
+/* --------endservices--------- */
+#offers{
+    background-color:#004141;  
+}
+.btn-buy{
+    background-color: #00BFCC;
+    color:white;
+    padding: 15px 40px;
+    font-size: 25px;
+    font-weight:500;
+    
+}
+#offers h3{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* --------endoffers--------- */
+.contact{
+    background-color: #313131;
+}
+.cardlayer i:hover{
+background-color: #00BFCC !important;
+color:white !important;
+transition: all 0.5s;
+}
+
